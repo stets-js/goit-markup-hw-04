@@ -156,7 +156,11 @@ body {
   padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url("../images/hero-overlay.png"),
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url("../images/hero_img.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -201,8 +205,18 @@ body {
 /*** benefits ***/
 
 .benefits h2 {
-  display: none;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
+
 .benefits h3 {
   color: var(--title-text);
 
@@ -315,6 +329,101 @@ body {
   padding: 30px 0px;
 }
 
+/*******TEAM social icons******** */
+
+.team-icon-list {
+  display: flex;
+  padding: 0px 32px;
+  margin-top: 16px;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.team-icon-item {
+  width: 44px;
+  height: 44px;
+}
+
+.team-icon-link {
+  width: 44px;
+  height: 44px;
+  display: block;
+  border-radius: 50%;
+  color: #afb1b8;
+  background-color: #f5f4fa;
+}
+
+.team-icon-link:hover,
+.team-icon-link:focus {
+  color: #ffffff;
+  background-color: var(--accent);
+}
+
+.team-icon {
+  margin-top: 12px;
+  fill: currentColor;
+}
+
+/* ************************** OUR CLIENTS************************/
+
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-section h2 {
+  margin-bottom: 50px;
+  color: var(--title-text);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.clients-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-item:hover,
+.clients-item:focus {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.clients-link {
+  width: 170px;
+  height: 90px;
+  display: block;
+  border: 1px solid #afb1b8;
+  color: #afb1b8;
+  background-color: #fff;
+  padding: 16px 32px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.clients-icon {
+  fill: currentColor;
+}
+
 /*************************** footer *****************************/
 footer {
   background-color: #2f303a;
@@ -361,6 +470,61 @@ footer {
   color: var(--accent);
 }
 
+/* ******************************** FOOTER SOCIAL ICONS **************** */
+
+.footer-flex {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-social-tumb {
+  margin-top: 12px;
+  margin-left: 70px;
+  width: 206px;
+}
+.footer-social-tumb p {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--main-bg);
+}
+
+.footer-social-list {
+  display: flex;
+  padding: 0;
+  margin-top: 0;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-social-link {
+  width: 44px;
+  height: 44px;
+  display: block;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #ffffff10;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  color: #ffffff;
+  background-color: var(--accent);
+}
+
+.footer-social-icon {
+  margin: 12px 0px 0px 12px;
+  fill: currentColor;
+}
 /* ******************************** PORTFOLIO ************************** */
 /*********************************** PAGE ****************************** */
 .title-portfolio {
