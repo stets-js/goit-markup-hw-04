@@ -148,7 +148,7 @@ body {
 }
 
 /************************* MAIN ***************************/
-/* временный фон HERO */
+
 .section.hero {
   max-width: 1600px;
   min-height: 600px;
@@ -185,8 +185,8 @@ body {
 }
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #ffffff;
-  color: var(--accent);
+  background-color: #188ce8;
+  color: #ffffff;
 }
 .hero-button {
   background-color: var(--accent);
@@ -202,7 +202,7 @@ body {
   border-radius: 4px;
 }
 
-/*** benefits ***/
+/************************** benefits ***************************/
 
 .benefits h2 {
   position: absolute;
@@ -249,11 +249,13 @@ body {
   background-image: url("../images/radar.svg");
 } */
 .benefits-icon-bg {
-  display: block;
-  padding: 25px 100px;
+  display: flex;
+  min-height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
+  align-items: center;
+  justify-content: center;
 }
 
 .benefits-item {
@@ -264,7 +266,7 @@ body {
   margin-left: 30px;
 }
 
-/***** activity *****/
+/******************************* activity *******************************/
 .section.activity {
   padding-top: 0;
 }
@@ -286,7 +288,7 @@ body {
   margin-left: 30px;
 }
 
-/***** team *****/
+/********************************** team *********************************/
 .team {
   background-color: var(--secondary-bg);
 }
@@ -329,7 +331,7 @@ body {
   padding: 30px 0px;
 }
 
-/*******TEAM social icons******** */
+/***********************TEAM social icons************************* */
 
 .team-icon-list {
   display: flex;
@@ -351,7 +353,7 @@ body {
   display: block;
   border-radius: 50%;
   color: #afb1b8;
-  background-color: #f5f4fa;
+  background-color: #ffffff;
 }
 
 .team-icon-link:hover,
@@ -406,12 +408,15 @@ body {
 
 .clients-link {
   width: 170px;
-  height: 90px;
+  height: 92px;
   display: block;
   border: 1px solid #afb1b8;
+  border-radius: 4px;
   color: #afb1b8;
   background-color: #fff;
-  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .clients-link:hover,
